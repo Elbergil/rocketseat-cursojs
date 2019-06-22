@@ -8,16 +8,12 @@
 </head>
 <body>
     <script>
-function pares(x, y) {
-  for (var i = x; i <= y; i++) {
-    if (i % 2 == 0) {
-      console.log(i);
-    }
-  }
+function temHabilidade(skills) {
+  return skills.indexOf("Javascript") !== -1;
 }
 
-pares(32, 321);
-
+var skills = ["Javascript", "ReactJS", "React Native"];
+console.log(temHabilidade(skills));
       
     </script>
 </body>
