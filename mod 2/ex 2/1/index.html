@@ -6,16 +6,21 @@
 </head>
 
 <body>
-  <button id="new">Botao gerardor dos quadradinhos</button>
+  <button id="novo">Botao gerardor dos quadradinhos</button>
 
-  <div id="squares"></div>
+  <div id="quadrado"></div>
 
  
 <script>
-    var btnElement = document.getElementById('new');
-    var squaresElement = document.getElementById('squares');
+    var btnElement = document.getElementById('novo');
+    var squaresElement = document.getElementById('quadrado');
     btnElement.onclick = function () {
       
+      var quadrado = document.createElement('div');
+      quadrado.style.width = '100px';
+      quadrado.style.height = '100px';
+      quadrado.style.backgroundColor = '#F00';
+      squaresElement.appendChild(quadrado);
     };
 
   </script>
