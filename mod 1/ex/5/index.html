@@ -8,16 +8,25 @@
 </head>
 <body>
     <script>
-var usuarios = [
-{
-nome: "Diego",
-habilidades: ["Javascript", "ReactJS", "Redux"]
-},
-{
-nome: "Gabriel",
-habilidades: ["VueJS", "Ruby on Rails", "Elixir"]
+function exibeHabilidades(user) {
+  for (user of user) {
+    console.log
+    ( "O" + " " +user.nome + " " +" tem habilidades dee: " + " " + user.habilidades.join);
+  }
 }
+
+var user = [
+  {
+    nome: "Diego",
+    habilidades: ["Javascript", "ReactJS", "Redux"]
+  },
+  {
+    nome: "Gabriel",
+    habilidades: ["VueJS", "Ruby on Rails", "Elixir"]
+  }
 ];
+
+exibeHabilidades(user);
     </script>
 </body>
 </html>
