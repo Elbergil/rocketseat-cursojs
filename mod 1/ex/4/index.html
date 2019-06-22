@@ -11,10 +11,17 @@
 function experiencia(anos) {
   if (anos <= 1) {
     return "Iniciante";
-  } 
+  } else if (anos <= 3) {
+    return "Intermediário";
+  } else if (anos <= 6) {
+    return "Avançado";
+  }
+  
 }
-var anosEstudo = 1;
-console.log(experiencia(anosEstudo));      
+
+var anosEstudo = 5;
+console.log(experiencia(anosEstudo));
+      
     </script>
 </body>
 </html>
