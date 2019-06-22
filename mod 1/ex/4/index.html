@@ -8,13 +8,13 @@
 </head>
 <body>
     <script>
-function temHabilidade(skills) {
-  return skills.indexOf("Javascript") !== -1;
+function experiencia(anos) {
+  if (anos <= 1) {
+    return "Iniciante";
+  } 
 }
-
-var skills = ["Javascript", "ReactJS", "React Native"];
-console.log(temHabilidade(skills));
-      
+var anosEstudo = 1;
+console.log(experiencia(anosEstudo));      
     </script>
 </body>
 </html>
