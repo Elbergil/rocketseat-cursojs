@@ -35,19 +35,8 @@ var listElement = document.querySelector('ul');
         liElement.appendChild(textElement);
         listElement.appendChild(liElement);}}
 
-        function listRepositories() {
-      var user = inputElement.value;
-      if (!user) return;
+  
     
-      axios.get('https://api.github.com/users/' + user + '/repos')
-       
-      .then(function (response) {
-         
-         
-          renderRepositories(response.data);
-        }
-        )
-    }
     function renderLoading(loading) {
       listElement.innerHTML = "a ok";}
       var textElement = document.createTextNode('loading.............');
@@ -67,6 +56,12 @@ var listElement = document.querySelector('ul');
       listElement.appendChild(errorElement);
       function listRepositories() {
       var user = inputElement.value;}
+        if (!user) return;
+      renderLoading();
+      axios.get('https://api.github.com/users/' + user + '/repos')
+        .then(function (response) {
+          renderRepositories(response.data);
+        })
 
 </script>
 </body>
