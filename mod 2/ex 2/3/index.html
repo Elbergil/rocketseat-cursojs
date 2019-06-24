@@ -9,21 +9,19 @@
 <body>
 
   <ul>
-    Diego
-    Gabriel
-    Lucas
+
   </ul>
   <script>
-    var nomes = ["Diego", "Gabriel", "Lucas"];
-    var listElements = document.querySelector('ul');
-
-    for (nome of nomes) {
-      var lisElement = document.createElement('lis');
-      var textElement = document.createTextNode(nome);
+     var nomes = ['Diego', 'Gabriel', 'Lucas'];
+    var listElement = document.querySelector('ul');
     
-       lisElement.appendChild(textElement);
-       listElement.appendChild(lisElement);
-    }
+    for (nome of nomes) {
+      var liElement = document.createElement('li');
+      var textElement = document.createTextNode(nome);
+     
+      liElement.appendChild(textElement);
+      listElement.appendChild(liElement);
+      }
   </script>
 </body>
 </html>
