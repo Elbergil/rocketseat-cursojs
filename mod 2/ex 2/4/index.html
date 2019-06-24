@@ -7,21 +7,22 @@
   <title>Ex 2</title>
 </head>
 <body>
-
   <ul>
 
+
   </ul>
-  <script>
-     var nomes = ['Diego', 'Gabriel', 'Lucas'];
+
+  <input type="text" name="nome">
+  <button onClick="adicionar()">Adicionar</button>
+<script>
+ var nomes = ['Gabriel', 'Diego', 'Lucas'];
     var listElement = document.querySelector('ul');
-    
-    for (nome of nomes) {
+    var inputElement = document.querySelector('input');
+
+    function addItem(text) {
       var liElement = document.createElement('li');
-      var textElement = document.createTextNode(nome);
-     
-      liElement.appendChild(textElement);
-      listElement.appendChild(liElement);
-      }
-  </script>
+      var textElement = document.createTextNode(text);
+
+</script>
 </body>
 </html>
