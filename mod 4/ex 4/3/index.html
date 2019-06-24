@@ -51,7 +51,13 @@ var listElement = document.querySelector('ul');
     function renderLoading(loading) {
       listElement.innerHTML = "a ok";}
       var textElement = document.createTextNode('loading.............');
-      var loadingElement = document.createElement('li');
+      var loadingElement = document.createElement('li');   
+      
+      loadingElement.appendChild(textElement);
+      
+      
+      listElement.appendChild(loadingElement);
+
 
 
 </script>
