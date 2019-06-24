@@ -61,7 +61,7 @@ var listElement = document.querySelector('ul');
       axios.get('https://api.github.com/users/' + user + '/repos')
         .then(function (response) {
           renderRepositories(response.data);
-        })
+        });
 
 </script>
 </body>
