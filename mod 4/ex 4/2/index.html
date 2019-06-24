@@ -32,8 +32,14 @@ var listElement = document.querySelector('ul');
       var user = inputElement.value;
       if (!user) return;
     
-    
-    
+      axios.get('https://api.github.com/users/' + user + '/repos')
+       
+      .then(function (response) {
+         
+         
+          renderRepositories(response.data);
+        }
+        )
     }
 </script>
 </body>
