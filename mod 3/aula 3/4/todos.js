@@ -17,7 +17,10 @@ listElement.innerHTML = '';
         var  todoText = document.createTextNode(todo);
         var linkElement = document.createElement('a')
      linkElement.setAttribute('href','#');
-        var linkText = document.createTextNode('excluir :3');
+     var pos = todos.indexOf(todo);
+     linkElement.setAttribute('onclick','deleteTodo('+ pos +')');
+    
+     var linkText = document.createTextNode('excluir :3');
     
        linkElement.appendChild(linkText);
         todoElement.appendChild(todoText);
