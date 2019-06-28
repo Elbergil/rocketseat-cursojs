@@ -16,10 +16,12 @@ listElement.innerHTML = '';
         var todoElement = document.createElement("li");
         var  todoText = document.createTextNode(todo);
         var linkElement = document.createElement('a')
-        var linkText = document.createTextNode('excluir :3')
+        var linkText = document.createTextNode('excluir :3');
     
+       linkElement.appendChild(linkText);
         todoElement.appendChild(todoText);
-      listElement.appendChild(todoElement);
+      todoElement.appendChild(linkElement)
+        listElement.appendChild(todoElement);
    
      
    
