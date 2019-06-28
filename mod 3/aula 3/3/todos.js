@@ -11,3 +11,6 @@ var todos = [
 "beber agua",
 "lixo no lixo"
 ];
+function renderTodos(){
+    
+}
