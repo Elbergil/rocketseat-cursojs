@@ -16,6 +16,7 @@ listElement.innerHTML = '';
         var todoElement = document.createElement("li");
         var  todoText = document.createTextNode(todo);
         var linkElement = document.createElement('a')
+     linkElement.setAttribute('href','#');
         var linkText = document.createTextNode('excluir :3');
     
        linkElement.appendChild(linkText);
@@ -37,4 +38,8 @@ function addTodo(){
     inputElement.value ='';
     renderTodos();
 }
-buttonElement.onclick = addTodo;
+buttonElement.onclick = addTodo
+function deleteTodo(pos ){
+    todos.splice(pos, 1);
+    renderTodos();
+}
