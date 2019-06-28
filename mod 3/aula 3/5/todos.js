@@ -4,11 +4,7 @@ var inputElement =document.querySelector("#app input");
 
 var buttonElement =document.querySelector("#app button");
 
-var todos = [
-"fazer café",
-"beber agua",
-"lixo no lixo"
-];
+var todos = JSON.parse(localStorage.getItem('list_todos')) || [];
 function renderTodos(){
 listElement.innerHTML = '';
 
@@ -47,6 +43,7 @@ buttonElement.onclick = addTodo
 function deleteTodo(pos ){
     todos.splice(pos, 1);
     renderTodos();
+    saveToStorage();
 }
 function saveToStorage(){
     localStorage.setItem('list_todos', JSON.stringify(todos));
