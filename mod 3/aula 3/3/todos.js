@@ -20,3 +20,12 @@ function renderTodos(){
       listelement.appendChild(todoElement);
     }
 }
+renderTodos();
+
+function addTodo(){
+    var todoText = inputElement.value;
+
+    todo.push(todoText);
+    inputElement.value ='';
+    renderTodos();
+}
