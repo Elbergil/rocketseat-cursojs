@@ -12,5 +12,8 @@ var todos = [
 "lixo no lixo"
 ];
 function renderTodos(){
-    
+    for (todo of todos){
+        var todoElement = document.createElement("li");
+        var  todoText = document.createTextNode(todo);
+    }
 }
